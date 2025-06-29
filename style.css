@@ -1,9 +1,4 @@
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-    
+  
 * {
     margin: 0;
     padding: 0;

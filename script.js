@@ -9,8 +9,8 @@ input.addEventListener("submit", (e)=>{
 
     const sum = statement(income, expenditures)
 
-if (income, expenditures === ""){
-    alert("Field is empty")
+if (!income || !expenditures || !month){
+    alert("Please fill in all fields and select month")
 
 } else{
         newBlock(month, income, expenditures, sum)
