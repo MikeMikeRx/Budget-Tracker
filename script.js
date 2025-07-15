@@ -1,5 +1,3 @@
-
-
 const input = document.querySelector("#inc-form")
 input.addEventListener("submit", (e)=>{
     e.preventDefault()
@@ -17,8 +15,7 @@ if (!income || !expenditures || !month){
         color(sum)
         e.target.elements.income.value = ""
         e.target.elements.expenditures.value = ""
-        e.target.elements.months.value = ""
-        
+        e.target.elements.months.value = ""        
         }
 })
 

@@ -31,9 +31,14 @@ const newBlock = (m, i, e, s)=>{
 }
 
 const color = (cash) =>{
-    if (cash <= 0){
-        cash = document.querySelector(".results-container .uSaved")
-        cash.style.color = "red"
+    
+        let allSaved = document.querySelectorAll(".results-container .uSaved")
+        let latestSaved = allSaved[allSaved.length - 1]
+    
+    if (Number(cash) <= 0){
+        latestSaved.style.color = "red"
+    } else {
+        latestSaved.style.color = "rgb(2, 201, 45)"
     }
 }
 
